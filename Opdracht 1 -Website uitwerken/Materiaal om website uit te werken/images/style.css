@@ -1,0 +1,113 @@
+:root {
+    --color-primary: white;
+    --color-white: white;
+    --color-black: black;
+    --color-black-1: #212b38;
+  }
+  
+  body {
+    font-family: sans-serif;
+   
+  }
+  
+  .menu-bar {
+    background-color: rgb(53, 51, 51);
+    height: 40px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 5%;
+    position: relative;
+  }
+  .menu-bar ul {
+    list-style: none;
+    display: flex;
+  }
+  .menu-bar ul li {
+    /* width: 120px; */
+    padding: 10px 30px;
+    /* text-align: center; */
+    position: relative;
+  }
+  .menu-bar ul li a {
+    font-size: 20px;
+    color: var(--color-white);
+    text-decoration: none;
+    transition: all 0.3s;
+  }
+  .menu-bar ul li a:hover {
+    background-color: rgb(212, 114, 131);
+  }
+  .fas {
+    float: right;
+    margin-left: 10px;
+    padding-top: 3px;
+  }
+  /* dropdown menu style */
+  .dropdown-menu {
+    display: none;
+  }
+  .menu-bar ul li:hover .dropdown-menu {
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 100%;
+    background-color: var(--color-black);
+  }
+  .menu-bar ul li:hover .dropdown-menu ul {
+    display: block;
+    margin: 10px;
+  }
+  .menu-bar ul li:hover .dropdown-menu ul li {
+    width: 150px;
+    padding: 10px;
+  }
+  .dropdown-menu-1 {
+    display: none;
+  }
+  .dropdown-menu ul li:hover .dropdown-menu-1 {
+    display: block;
+    position: absolute;
+    left: 150px;
+    top: 0;
+    background-color: var(--color-black);
+  }
+  .hero {
+    height: calc(100vh - 80px);
+    background-image: url(./bg.jpg);
+    background-position: center;
+  }
+  
+  #nummer{
+    display: flex;
+    justify-content: flex-end;
+  }
+  .hoofd{
+   height: 150px;
+  }
+   body{
+    background-color:  gray;
+    width: 1200px;
+    position: absolute;
+   }
+
+   .base{
+    background-image: url(pic01.png);
+    background-repeat: no-repeat;
+    height: 1200px;
+    
+   }
+   .inhoud{
+    background-color: gainsboro;
+    width: 600px;
+   }
+ .nieuws{
+   float: right;
+   width: 255px;
+   margin-top: -400px;
+    color: white;
+    font-style: italic;
+    background:  rgba(0,0,0,0.5);
+ }
+ 
